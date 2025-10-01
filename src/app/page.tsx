@@ -3,6 +3,7 @@ import CoursesIntro from "@/components/courses-intro";
 import HeroSection from "@/components/hero-section";
 import MissionStatement from "@/components/mission-statement";
 import Navigation from "@/components/shared/navigation";
+import Partners from '../components/partners';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <CoursesIntro />
         <MissionStatement />
         <Campuses />
+        <Partners />
       </div>
     </>
   );

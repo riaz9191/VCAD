@@ -31,7 +31,7 @@ export default function HalfFillHeading({
         - We can now safely use a negative z-index.
       */}
       <div
-        className='absolute bottom-[0.3em] left-1 w-[385px] h-[28%]'
+        className='absolute bottom-[0.1em] left-0 w-full h-[40%]'
         style={{
           backgroundColor: fillColor,
           zIndex: -1, 
