@@ -14,7 +14,7 @@ export default function Home() {
       <HeroSection />
       <div className='bg-[#05002C]'>
         <Navigation />
-        <CoursesIntro />
+                <CoursesIntro />
         <MissionStatement />
         <Campuses />
         <Partners />

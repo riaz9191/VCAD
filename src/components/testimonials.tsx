@@ -48,7 +48,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className='bg-[#05002C] px-6 py-24 sm:py-32 overflow-hidden'>
+    <section id='student-testimonials' className='bg-[#05002C] px-6 py-24 sm:py-32 overflow-hidden'>
       <div className='mx-auto max-w-[1600px]'>
         <h2 className='text-4xl sm:text-[64px] font-black text-white uppercase mb-20 max-w-7xl leading-tight '>
           Student <br />

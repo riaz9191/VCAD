@@ -13,7 +13,7 @@ export default function Navigation() {
           </li>
           <li>
             <a
-              href='#analysis'
+              href='#campuses'
               className='text-white/80 hover:text-cyan-400 transition-colors uppercase tracking-wide'
             >
               Campuses
@@ -21,7 +21,7 @@ export default function Navigation() {
           </li>
           <li>
             <a
-              href='#partners'
+              href='#partner-institutions'
               className='text-white/80 hover:text-cyan-400 transition-colors uppercase tracking-wide'
             >
               Partner institutions
@@ -29,7 +29,7 @@ export default function Navigation() {
           </li>
           <li>
             <a
-              href='#testimonials'
+              href='#student-testimonials'
               className='text-white/80 hover:text-cyan-400 transition-colors uppercase tracking-wide'
             >
               student testimonials

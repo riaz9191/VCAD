@@ -4,7 +4,7 @@ import HalfFillHeading from "./ui/HalfFillHeading";
 
 export default function CoursesIntro() {
   return (
-    <section className='bg-[#05002C] py-20 mt-5'>
+    <section id='courses' className='bg-[#05002C] py-20 mt-5'>
       <div className='max-w-[1690px] mx-auto px-4'>
         <div className='flex gap-36 items-start mx-auto'>
           {/* Left side - Image with border */}

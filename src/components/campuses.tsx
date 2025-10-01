@@ -35,7 +35,7 @@ export default function Campuses() {
 
   return (
     // The outermost section provides the darkest background and overall vertical spacing
-    <section className='bg-[#05002C] py-24 sm:py-32 mt-60'>
+    <section id='campuses' className='bg-[#05002C] py-24 sm:py-32 mt-60'>
       {/* This new div creates the lighter blue background layer for the content */}
       <div className='relative bg-[#06145A]  mx-auto px-6 lg:px-8 py-20'>
         {/* Decorative Floating Labels (positioned relative to the new background div) */}

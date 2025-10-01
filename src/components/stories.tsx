@@ -28,7 +28,7 @@ const storiesData = [
 
 export default function Stories() {
   return (
-    <section className='bg-[#05002C] py-24 sm:py-32'>
+    <section id='stories' className='bg-[#05002C] py-24 sm:py-32'>
       <div className='max-w-[1750px] mx-auto px-6 lg:px-8'>
         <h2 className='text-4xl sm:text-[64px] font-black text-white uppercase mb-20'>
           Stories
