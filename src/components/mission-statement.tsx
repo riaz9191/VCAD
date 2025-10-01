@@ -10,18 +10,18 @@ export default function MissionStatement() {
           {/* Left side - Quote */}
           <div className='lg:col-span-2'>
             <figure className='relative'>
-              <span className='absolute -top-8 -left-4 text-9xl font-bold text-white/50 leading-none'>
-                “
+              <span className='absolute -top-20 -left- text-9xl font-bold text-white/50 leading-none'>
+                <Image src='/quote.png' alt='quote' width={80} height={80} />
               </span>
-              <blockquote className='text-4xl lg:text-5xl font-black text-white leading-tight'>
+              <blockquote className='text-4xl lg:text-[64px] font-black text-white leading-tight sm:pl-20 py-10'>
                 A World where <br />
                 <span className='text-[#86DCFF]'>EVERYONE has</span> <br />
                 <span className='text-[#86DCFF]'>the opportunity</span> <br />
                 to fulfil their <br />
                 potential
               </blockquote>
-              <span className='absolute -bottom-16 -right-4 text-9xl font-bold text-white/50 leading-none'>
-                ”
+              <span className='absolute -bottom-20 right-60 text-9xl font-bold text-white/50 leading-none rotate-180'>
+                <Image src='/quote.png' alt='quote' width={80} height={80} />
               </span>
             </figure>
           </div>

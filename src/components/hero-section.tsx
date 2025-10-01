@@ -42,7 +42,7 @@ export default function HeroSection() {
                   height={542}
                 />
                 <h3
-                  className='absolute top-[28px] left-[-72px] bg-[#FF1C9E] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
+                  className='absolute top-[28px] left-[-72px] bg-[#FF379E] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
                   style={{ transform: "rotate(-15deg)" }}
                 >
                   FASHION

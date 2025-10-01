@@ -1,3 +1,4 @@
+import Campuses from "@/components/campuses";
 import CoursesIntro from "@/components/courses-intro";
 import HeroSection from "@/components/hero-section";
 import MissionStatement from "@/components/mission-statement";
@@ -11,7 +12,7 @@ export default function Home() {
         <Navigation />
         <CoursesIntro />
         <MissionStatement />
-        {/* <CoursesIntro /> */}
+        <Campuses />
       </div>
     </>
   );
