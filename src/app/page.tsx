@@ -41,8 +41,8 @@ export default function Home() {
 
   return (
     <>
-      <HeroSection />
       <div className='bg-[#05002C]'>
+      <HeroSection />
         <Navigation active={activeSection} />
         <CoursesIntro />
         <MissionStatement />

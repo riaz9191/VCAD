@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Button from "./ui/button";
 
-// Data for the stories. Easy to add more here.
 const storiesData = [
   {
     id: 1,
     imageSrc: "/stories-1.jpg",
     title: "INDUCTION IN VCAD CANARY WHARF CAMPUS",
-    highlightedPart: null, // No highlighted part for this story
+    highlightedPart: null,
     description:
       "If you join Victoria College of Arts and Design, you can expect the highest calibre of teaching, cutting-edge facilities, and exceptional industry connections, which will help to prepare you for a rewarding career in the creative and tech industries.",
     buttons: [
@@ -19,7 +18,7 @@ const storiesData = [
     id: 2,
     imageSrc: "/stories-2.jpg",
     title: "BE READY FOR APPLYING! FIVE TIPS TO",
-    highlightedPart: "BUILD YOUR PORTFOLIO", // This part will be pink
+    highlightedPart: "BUILD YOUR PORTFOLIO",
     description:
       "If you join Victoria College of Arts and Design, you can expect the highest calibre of teaching, cutting-edge facilities, and exceptional industry connections, which will help to prepare you for a rewarding career in the creative and tech industries.",
     buttons: [{ text: "Read article", variant: "primary" }],
@@ -34,42 +33,37 @@ export default function Stories() {
           Stories
         </h2>
 
-        {/* Container for all story items */}
         <div className='flex flex-col gap-20'>
           {storiesData.map((story) => (
-            // Grid layout for a single story item (Image + Text)
             <div
               key={story.id}
-              className='grid lg:grid-cols-2 gap-12 xl:gap-0 items-start'
+              className='grid grid-cols-1 xl:grid-cols-2 gap-12 items-start'
             >
-              {/* Left Column: Image */}
-              <div className=' w-[677px] h-[709px]'>
+              <div className=' lg:w-[677px] lg:h-[709px] '>
                 <Image
                   src={story.imageSrc}
                   alt={story.title}
-                  width={600}
-                  height={450}
+                  width={677}
+                  height={709}
                   className='w-full h-full object-cover border-2 border-white'
                 />
               </div>
 
-              {/* Right Column: Text Content */}
-              <div className='flex flex-col justify-center'>
-                <h3 className='text-3xl lg:text-[64px] font-black text-white uppercase leading-tight max-w-5xl'>
-                  {story.title}
-                  {/* Render the highlighted part if it exists */} <br />
+              <div className='flex flex-col justify-center items-center text-center xl:items-start xl:text-left'>
+                <h3 className='text-4xl md:text-5xl xl:text-[64px] font-black text-white uppercase leading-tight max-w-5xl'>
+                  {story.title} <br />
                   {story.highlightedPart && (
                     <span className=' text-[#E018E0] mt-1'>
                       {story.highlightedPart}
                     </span>
                   )}
                 </h3>
-                <p className='text-white text-base sm:text-[24px] leading-relaxed mt-6 max-w-4xl'>
+                <p className='text-white text-lg md:text-[24px] leading-relaxed mt-6 max-w-4xl'>
                   {story.description}
                 </p>
 
-                {/* Dynamically render buttons */}
-                <div className='flex flex-wrap gap-4 mt-8'>
+
+                <div className='flex flex-wrap gap-4 mt-8 justify-center xl:justify-start'>
                   {story.buttons.map((button) => (
                     <Button
                       key={button.text}

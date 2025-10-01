@@ -34,11 +34,8 @@ export default function Campuses() {
   ];
 
   return (
-    // The outermost section provides the darkest background and overall vertical spacing
-    <section id='campuses' className='bg-[#05002C] py-24 sm:py-32 mt-60'>
-      {/* This new div creates the lighter blue background layer for the content */}
-      <div className='relative bg-[#06145A]  mx-auto px-6 lg:px-8 py-20'>
-        {/* Decorative Floating Labels (positioned relative to the new background div) */}
+    <section id='campuses' className='bg-[#05002C] py-24 sm:py-32 mt-32 xl:mt-60'>
+      <div className='relative bg-[#06145A] mx-auto px-6 lg:px-8 py-20'>
         <div className='hidden lg:block'>
           <div
             className='absolute top-52 left-[9rem] bg-[#FF379E] text-white font-[900] text-[30px] uppercase px-5 py-1'
@@ -59,36 +56,37 @@ export default function Campuses() {
             Borough
           </div>
         </div>
-        <div className='relative -mt-44'>
-          {/* Image Grid with fixed Figma dimensions */}
-          <div className='w-[750px] h-[483px] mx-auto grid grid-cols-3 gap-2'>
-            {campusData.map((campus) => (
-              <div key={campus.name} className='flex flex-col h-full'>
-                <div className='bg-[#061665] text-[#05002C] font-bold text-sm sm:text-[20px] uppercase p-3 flex justify-between items-center'>
-                  <span>{campus.name}</span>
-                  <ArrowRightIcon />
+
+        <div className='relative -mt-24 xl:-mt-44'>
+          <div className='w-full max-w-lg mx-auto xl:max-w-none xl:w-[750px] xl:h-[483px]'>
+            <div className='grid grid-cols-1 xl:grid-cols-3 gap-4 xl:gap-2 h-full'>
+              {campusData.map((campus) => (
+                <div key={campus.name} className='flex flex-col'>
+                  <div className='bg-[#8EC8EE] text-[#05002C] font-bold text-sm sm:text-[20px] uppercase p-3 flex justify-between items-center'>
+                    <span>{campus.name}</span>
+                    <ArrowRightIcon />
+                  </div>
+                  <div className='flex-grow overflow-hidden aspect-video xl:aspect-auto'>
+                    <Image
+                      src={campus.image}
+                      alt={`View of the ${campus.name} campus location`}
+                      className='w-full h-full object-cover'
+                      width={800}
+                      height={500}
+                    />
+                  </div>
                 </div>
-                <div className='flex-grow overflow-hidden'>
-                  <Image
-                    src={campus.image}
-                    alt={`View of the ${campus.name} campus location`}
-                    className='w-full h-full object-cover'
-                    width={800}
-                    height={500}
-                  />
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-        {/* Centered Text Content */}
         <div className='text-center mt-16'>
           <HalfFillHeading
             text='CAMPUSES'
             fillColor='#86DCFF'
-            className='text-[64px] font-black text-white uppercase tracking-wider'
+            className='text-5xl xl:text-[64px] font-black text-white uppercase tracking-wider'
           />
-          <p className='max-w-3xl mx-auto text-white text-[24px] leading-relaxed mt-6'>
+          <p className='max-w-3xl mx-auto text-white text-lg md:text-[24px] leading-relaxed mt-6'>
             We have multiple locations across the UK, all strategically situated
             in vibrant city centers and easily accessible by public transport.
           </p>
