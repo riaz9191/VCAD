@@ -4,7 +4,7 @@ import Button from "./ui/button";
 
 export default function HeroSection() {
   return (
-    <section className='relative bg-[#05002C] min-h-screen flex flex-col py-8 overflow-hidden px-5 sm:px-10 lg:px-14'>
+    <section className='relative bg-[#05002C] flex flex-col py-8 overflow-hidden px-5 sm:px-10 lg:px-14'>
       <Header />
       <div className='flex-grow flex items-center justify-center'>
         <div className='mx-auto max-w-[1744px] relative z-10 w-full'>
