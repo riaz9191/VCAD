@@ -48,8 +48,8 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section id='student-testimonials' className='bg-[#05002C] px-6 py-24 sm:py-32 overflow-hidden'>
-      <div className='mx-auto max-w-[1600px]'>
+    <section id='student-testimonials' className='bg-[#05002C] px-6 py-24 sm:py-32 overflow-hidden lg:px-20'>
+      <div className='mx-auto max-w-[1750px]'>
         <h2 className='text-4xl sm:text-[64px] font-black text-white uppercase mb-20 max-w-7xl leading-tight '>
           Student <br />
           <HalfFillHeading text='Testimonials' fillColor='#8EC8EE' />

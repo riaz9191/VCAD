@@ -28,7 +28,7 @@ const storiesData = [
 
 export default function Stories() {
   return (
-    <section id='stories' className='bg-[#05002C] py-24 sm:py-32 sm:px-28'>
+    <section id='stories' className='bg-[#05002C] py-24 sm:py-32 sm:px-10'>
       <div className='max-w-[1750px] mx-auto px-6 lg:px-8'>
         <h2 className='text-4xl sm:text-[64px] font-black text-white uppercase mb-20'>
           Stories
@@ -40,7 +40,7 @@ export default function Stories() {
             // Grid layout for a single story item (Image + Text)
             <div
               key={story.id}
-              className='grid lg:grid-cols-2 gap-12 xl:gap-24 items-start'
+              className='grid lg:grid-cols-2 gap-12 xl:gap-0 items-start'
             >
               {/* Left Column: Image */}
               <div className=' w-[677px] h-[709px]'>

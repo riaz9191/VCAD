@@ -3,8 +3,8 @@ import HalfFillHeading from "./ui/HalfFillHeading";
 
 export default function Partners() {
   return (
-    <section id='partner-institutions' className='bg-[#05002C] px-6 py-24 sm:py-32 lg:px-32'>
-      <div className='custom-container mx-auto grid grid-cols-2 gap-32 items-center '>
+    <section id='partner-institutions' className='bg-[#05002C] px-6 py-24 sm:py-32 sm:px-20'>
+      <div className='max-w-[1760px] mx-auto grid grid-cols-2 gap-32 items-center '>
         {/* Left Column: Title and Description */}
         <div className='flex flex-col gap-28 '>
           <h2 className='text-4xl  font-black text-white uppercase leading-tight sm:text-[64px]'>
