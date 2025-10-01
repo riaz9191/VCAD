@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "./shared/header";
 import Button from "./ui/button";
 
@@ -64,10 +65,12 @@ export default function HeroSection() {
             <div className='relative -z-10'>
               <div className='absolute right-[-120px] top-[-120px] flex gap-9'>
                 <div className='relative w-[299px] h-[438px] border-2 border-[#FF1C9E]'>
-                  <img
+                  <Image
                     src='/hero-3.jpg'
                     alt='Fashion'
                     className='h-full w-full object-cover'
+                    width={299}
+                    height={438}
                   />
                   <h3 className='absolute bottom-[150px] left-[-72px] bg-[#061665] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'>
                     management
@@ -76,10 +79,12 @@ export default function HeroSection() {
 
                 {/* CARD: Media */}
                 <div className='top-[-98px] relative w-[365px] h-[535px] border-2 border-[#E018E0]'>
-                  <img
+                  <Image
                     src='/hero-4.jpg'
                     alt='Fashion'
                     className='h-full w-full object-cover'
+                    width={365}
+                    height={535}
                   />
                   <h3
                     className='absolute bottom-[150px] left-[-72px] bg-[#8EC8EE] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
