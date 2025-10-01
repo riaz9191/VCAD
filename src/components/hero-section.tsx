@@ -34,10 +34,12 @@ export default function HeroSection() {
             {/* CARD: Fashion */}
             <div className='flex flex-wrap gap-12'>
               <div className='relative w-[369px] h-[542px] border-2 border-[#FF1C9E]'>
-                <img
+                <Image
                   src='/hero-1.jpg'
                   alt='Fashion'
                   className='h-full w-full object-cover'
+                  width={369}
+                  height={542}
                 />
                 <h3
                   className='absolute top-[28px] left-[-72px] bg-[#FF1C9E] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
@@ -49,10 +51,12 @@ export default function HeroSection() {
 
               {/* CARD: Media */}
               <div className='relative w-[335px] h-[490px] border-2 border-[#E018E0]'>
-                <img
+                <Image
                   src='/hero-2.jpg'
                   alt='Fashion'
                   className='h-full w-full object-cover'
+                  width={335}
+                  height={490}
                 />
                 <h3
                   className='absolute top-[11px] right-[-72px] bg-[#E018E0] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
