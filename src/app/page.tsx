@@ -6,6 +6,7 @@ import Navigation from "@/components/shared/navigation";
 import Partners from '../components/partners';
 import Testimonials from "@/components/testimonials";
 import Stories from "@/components/stories";
+import Footer from "@/components/shared/footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
         <Partners />
         <Testimonials />
         <Stories />
+        <Footer />
       </div>
+      
     </>
   );
 }
