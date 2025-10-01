@@ -4,6 +4,8 @@ import HeroSection from "@/components/hero-section";
 import MissionStatement from "@/components/mission-statement";
 import Navigation from "@/components/shared/navigation";
 import Partners from '../components/partners';
+import Testimonials from "@/components/testimonials";
+import Stories from "@/components/stories";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <MissionStatement />
         <Campuses />
         <Partners />
+        <Testimonials />
+        <Stories />
       </div>
     </>
   );
