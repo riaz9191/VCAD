@@ -1,8 +1,7 @@
 # V-CAD: Victoria College of Arts and Design
 
-![VCAD Screenshot](public/images/dashboard.jpg)
 
-This is the official website for the Victoria College of Arts and Design (VCAD), a modern and responsive web application built with Next.js and Tailwind CSS.
+This a demo website for the Victoria College of Arts and Design (VCAD), a modern and responsive web application built with Next.js and Tailwind CSS.
 
 ## Features
 
