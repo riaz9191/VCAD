@@ -1,6 +1,8 @@
-import { Menu } from "lucide-react";
+"use client";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link"; // It's best practice to use Next.js's Link component for navigation
+import Link from "next/link";
 
 const navItems = [
   { href: "#courses", label: "Courses" },
@@ -10,6 +12,12 @@ const navItems = [
 ];
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className='mx-auto flex w-full max-w-[1760px] items-center justify-between z-20 relative py-2 px-6 lg:px-12'>
       <Link href='/'>
@@ -21,7 +29,8 @@ export default function Header() {
           className='h-auto w-[150px] md:w-[185px] object-contain'
         />
       </Link>
-      <nav className='hidden md:flex items-center gap-6 lg:gap-10'>
+    
+      <nav className='hidden'>
         {navItems.map((item) => (
           <Link
             key={item.label}
@@ -32,9 +41,37 @@ export default function Header() {
           </Link>
         ))}
       </nav>
-      <button className='md:hidden text-white hover:text-[#00C2FF] transition-colors p-2 -mr-2'>
+      <button
+        className='text-white hover:text-[#00C2FF] transition-colors p-2 -mr-2'
+        onClick={toggleMenu}
+      >
         <Menu className='size-8' />
       </button>
+
+      {isOpen && (
+        <div className='fixed inset-0 bg-black bg-opacity-50 z-40'>
+          <div className='fixed top-0 right-0 h-full w-64 bg-[#05002C] shadow-lg z-50 p-6'>
+            <button
+              className='absolute top-4 right-4 text-white hover:text-[#00C2FF] transition-colors'
+              onClick={toggleMenu}
+            >
+              <X className='size-8' />
+            </button>
+            <nav className='flex flex-col items-start gap-6 mt-16'>
+              {navItems.map((item) => (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className='text-white/80 hover:text-white transition-colors text-lg font-medium uppercase tracking-wider'
+                  onClick={toggleMenu}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
-  );
+  ) ;
 }

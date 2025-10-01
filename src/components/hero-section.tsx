@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className='flex-grow flex items-center justify-center'>
         <div className='mx-auto max-w-[1744px] relative z-10 w-full'>
           <div className='flex flex-col xl:flex-row xl:gap-5 items-center justify-center w-full'>
-            {/* Left: Heading and CTA */}
+          
             <div className='flex flex-col justify-center text-center xl:text-left p-4 xl:p-0'>
               <p className='mb-6 text-5xl md:text-3xl lg:text-5xl xl:text-[150px] font-black leading-none text-white px-4'>
                 WELCOME
