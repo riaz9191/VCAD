@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# V-CAD: Victoria College of Arts and Design
+
+![VCAD Screenshot](public/images/dashboard.jpg)
+
+This is the official website for the Victoria College of Arts and Design (VCAD), a modern and responsive web application built with Next.js and Tailwind CSS.
+
+## Features
+
+*   **Responsive Design:** The website is fully responsive and works on all devices, from mobile phones to desktop computers.
+*   **Modern UI:** The user interface is modern and clean, with a focus on usability and aesthetics.
+*   **Component-Based Architecture:** The application is built with a component-based architecture, making it easy to maintain and scale.
+*   **Side Navigation Menu:** The website features a side navigation menu that is accessible on all screen sizes.
 
 ## Getting Started
 
-First, run the development server:
+To get the project up and running, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  **Clone the repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone https://github.com/your-username/v-cad.git
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2.  **Install the dependencies:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```bash
+    pnpm install
+    ```
 
-## Learn More
+3.  **Run the development server:**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    pnpm dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Open the application in your browser:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*   [Next.js](https://nextjs.org/)
+*   [React](https://reactjs.org/)
+*   [Tailwind CSS](https://tailwindcss.com/)
+*   [TypeScript](https://www.typescriptlang.org/)
+*   [Lucide React](https://lucide.dev/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Please feel free to open an issue or submit a pull request.

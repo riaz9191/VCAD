@@ -6,7 +6,7 @@ type ButtonProps = {
   children: React.ReactNode;
   variant?: "primary" | "outline";
   onClick?: () => void;
-  className?: string; // for extra styles if needed
+  className?: string;
 };
 
 export default function Button({
