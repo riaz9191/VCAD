@@ -1,7 +1,7 @@
 export default function Navigation() {
   return (
-    <nav className='bg-[#05002C] backdrop-blur-lg sticky top-0 z-50'>
-      <div className='flex justify-center items-center whitespace-nowrap max-w-[754px] max-h-[80px] mx-auto border border-[#E018E0] p-[30px] '>
+    <nav className=' bg-none sticky top-0 z-50'>
+      <div className='bg-[#05002C] flex justify-center items-center whitespace-nowrap max-w-[754px] max-h-[80px] mx-auto border border-[#E018E0] p-[30px] '>
         <ul className='flex items-center justify-center gap-4 text-[16px] '>
           <li>
             <a
