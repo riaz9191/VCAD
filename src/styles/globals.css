@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom-container {
+  max-width: 1800px;
+}

@@ -16,7 +16,7 @@ export default function Button({
   className,
 }: ButtonProps) {
   const baseStyles =
-    "flex justify-center items-center px-[10px] py-[30px] font-semibold text-base  sm:text-[24px] transition-colors duration-200 font-extrabold w-[246px] h-[61px] tect-center";
+    "flex justify-center items-center px-[10px] py-[30px] font-semibold text-base  sm:text-[24px] transition-colors duration-200 font-[900] w-[246px] h-[61px] tect-center";
 
   const variants: Record<typeof variant, string> = {
     primary: "bg-[#8EC8EE] text-blue-900 hover:bg-blue-400 text-[#061665] ",
