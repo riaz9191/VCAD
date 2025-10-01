@@ -33,7 +33,7 @@ export default function HeroSection() {
           <div className='hidden lg:block min-h-[884.45px] relative'>
             {/* CARD: Fashion */}
             <div className='flex flex-wrap gap-12'>
-              <div className='relative w-[369px] h-[542px] border-2 border-[#FF1C9E]'>
+              <div className='relative w-[369px] h-[542px] border-2 border-[#E018E0]'>
                 <Image
                   src='/hero-1.jpg'
                   alt='Fashion'
@@ -46,6 +46,18 @@ export default function HeroSection() {
                   style={{ transform: "rotate(-15deg)" }}
                 >
                   FASHION
+                </h3>
+                <h3
+                  className='absolute bottom-[15px] left-[-32px] bg-[#00FFD2] px-8 py-7 text-sm font-extrabold text-[#061665] uppercase sm:text-[30px]'
+                  style={{ transform: "rotate(15deg)" }}
+                >
+                  Media
+                </h3>
+                <h3
+                  className='absolute bottom-[95px] right-[-110px] bg-[#061665] px-8 py-7 text-sm font-extrabold text-[#00FFD2] uppercase sm:text-[30px] z-10'
+                  style={{ transform: "rotate(-15deg)" }}
+                >
+                  Graphic Design
                 </h3>
               </div>
 
@@ -64,19 +76,25 @@ export default function HeroSection() {
                 >
                   photography
                 </h3>
+                <h3
+                  className='absolute bottom-[121px] right-[-122px] bg-[#061665] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
+                  style={{ transform: "rotate(15deg)" }}
+                >
+                  Business
+                </h3>
               </div>
             </div>
             <div className='relative -z-10'>
               <div className='absolute right-[-120px] top-[-120px] flex gap-9'>
-                <div className='relative w-[299px] h-[438px] border-2 border-[#FF1C9E]'>
+                <div className='relative w-[299px] h-[438px] border-2 border-[#E018E0]'>
                   <Image
                     src='/hero-3.jpg'
                     alt='Fashion'
-                    className='h-full w-full object-cover'
+                    className='h-full w-full object-cover filter grayscale'
                     width={299}
                     height={438}
                   />
-                  <h3 className='absolute bottom-[150px] left-[-72px] bg-[#061665] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'>
+                  <h3 className='absolute bottom-[120px] left-[-152px] bg-[#061665] px-8 py-7 text-sm font-extrabold text-[#E018E0] uppercase sm:text-[30px]'>
                     management
                   </h3>
                 </div>
@@ -91,7 +109,7 @@ export default function HeroSection() {
                     height={535}
                   />
                   <h3
-                    className='absolute bottom-[150px] left-[-72px] bg-[#8EC8EE] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
+                    className='absolute bottom-[150px] left-[-102px] bg-[#8EC8EE] px-8 py-7 text-sm font-extrabold text-white uppercase sm:text-[30px]'
                     style={{ transform: "rotate(-15deg)" }}
                   >
                     marketing

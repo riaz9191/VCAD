@@ -19,7 +19,7 @@ export default function Button({
     "flex justify-center items-center px-[10px] py-[30px] font-semibold text-base  sm:text-[24px] transition-colors duration-200 font-[900] w-[246px] h-[61px] tect-center";
 
   const variants: Record<typeof variant, string> = {
-    primary: "bg-[#8EC8EE] text-blue-900 hover:bg-blue-400 text-[#061665] ",
+    primary: "bg-[#8EC8EE] text-blue-900 hover:bg-blue-400 text-[#061665] font-bold",
     outline:
       "border border-[#8EC8EE] text-[#8EC8EE] hover:bg-[#8EC8EE] hover:text-blue-900",
   };

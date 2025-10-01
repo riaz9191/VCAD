@@ -28,7 +28,7 @@ const storiesData = [
 
 export default function Stories() {
   return (
-    <section id='stories' className='bg-[#05002C] py-24 sm:py-32'>
+    <section id='stories' className='bg-[#05002C] py-24 sm:py-32 sm:px-28'>
       <div className='max-w-[1750px] mx-auto px-6 lg:px-8'>
         <h2 className='text-4xl sm:text-[64px] font-black text-white uppercase mb-20'>
           Stories
@@ -55,11 +55,11 @@ export default function Stories() {
 
               {/* Right Column: Text Content */}
               <div className='flex flex-col justify-center'>
-                <h3 className='text-3xl lg:text-[64px] font-black text-white uppercase leading-tight'>
+                <h3 className='text-3xl lg:text-[64px] font-black text-white uppercase leading-tight max-w-5xl'>
                   {story.title}
-                  {/* Render the highlighted part if it exists */}
+                  {/* Render the highlighted part if it exists */} <br />
                   {story.highlightedPart && (
-                    <span className='block text-[#E018E0] mt-1'>
+                    <span className=' text-[#E018E0] mt-1'>
                       {story.highlightedPart}
                     </span>
                   )}

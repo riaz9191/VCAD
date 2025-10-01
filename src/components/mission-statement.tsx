@@ -54,9 +54,7 @@ export default function MissionStatement() {
                   There&apos;s Still Time <br />
                   to Apply for <br /> September 2025
                 </h3>
-                <Button className='bg-[#8EC8EE] text-[#05002C] hover:bg-[#86DCFF]/90 font-bold px-5 py-2.5 text-xs  self-start sm:self-center'>
-                  View Courses
-                </Button>
+                <Button variant='primary'>View Courses</Button>
               </div>
             </div>
           </div>

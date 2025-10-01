@@ -23,32 +23,34 @@ export default function Footer() {
         </div>
 
         {/* Right Side: Navigation and Socials within a bordered container */}
-        <div className='border border-[#8EC7EE] px-6 py-3'>
-          <div className='flex flex-col sm:flex-row items-center gap-6'>
-            {/* Navigation Links */}
-            <nav className='flex items-center gap-6 '>
-              {navLinks.map((link) => (
-                <a
-                  key={link}
-                  href='#'
-                  className='text-[#8EC7EE] text-base sm:text-[24px] transition-colors font-[400] hover:text-white'
-                >
-                  {link}
-                </a>
-              ))}
-            </nav>
+        <div className='max-w-2xl w-full '>
+          <div className='border border-[#8EC7EE] px-6 py-3  '>
+            <div className='flex flex-col sm:flex-row items-center gap-6'>
+              {/* Navigation Links */}
+              <nav className='flex items-center gap-12 '>
+                {navLinks.map((link) => (
+                  <a
+                    key={link}
+                    href='#'
+                    className='text-[#8EC7EE] text-base sm:text-[24px] transition-colors font-[400] hover:text-white'
+                  >
+                    {link}
+                  </a>
+                ))}
+              </nav>
 
-            {/* Social Icons */}
-            <div className='flex items-center gap-1'>
-              <a href='#' aria-label='Facebook'>
-                <FacebookIcon className='h-6 w-6 text-[#8EC7EE] hover:text-white transition-colors' />
-              </a>
-              <a href='#' aria-label='Instagram'>
-                <InstagramIcon className='h-6 w-6 text-[#8EC7EE] hover:text-white transition-colors' />
-              </a>
-              <a href='#' aria-label='YouTube'>
-                <YoutubeIcon className='h-6 w-6 text-[#8EC7EE] hover:text-white transition-colors' />
-              </a>
+              {/* Social Icons */}
+              <div className='flex items-center gap-1'>
+                <a href='#' aria-label='Facebook'>
+                  <FacebookIcon className='h-6 w-6 text-[#8EC7EE] hover:text-white transition-colors' />
+                </a>
+                <a href='#' aria-label='Instagram'>
+                  <InstagramIcon className='h-6 w-6 text-[#8EC7EE] hover:text-white transition-colors' />
+                </a>
+                <a href='#' aria-label='YouTube'>
+                  <YoutubeIcon className='h-6 w-6 text-[#8EC7EE] hover:text-white transition-colors' />
+                </a>
+              </div>
             </div>
           </div>
         </div>

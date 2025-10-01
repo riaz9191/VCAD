@@ -64,7 +64,7 @@ export default function Campuses() {
           <div className='w-[750px] h-[483px] mx-auto grid grid-cols-3 gap-2'>
             {campusData.map((campus) => (
               <div key={campus.name} className='flex flex-col h-full'>
-                <div className='bg-[#86DCFF] text-[#05002C] font-bold text-sm uppercase p-3 flex justify-between items-center'>
+                <div className='bg-[#061665] text-[#05002C] font-bold text-sm sm:text-[20px] uppercase p-3 flex justify-between items-center'>
                   <span>{campus.name}</span>
                   <ArrowRightIcon />
                 </div>
