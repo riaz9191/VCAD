@@ -59,7 +59,7 @@ export default function Stories() {
                   {story.title}
                   {/* Render the highlighted part if it exists */}
                   {story.highlightedPart && (
-                    <span className='block text-[#FF1C9E] mt-1'>
+                    <span className='block text-[#E018E0] mt-1'>
                       {story.highlightedPart}
                     </span>
                   )}
@@ -73,8 +73,8 @@ export default function Stories() {
                   {story.buttons.map((button) => (
                     <Button
                       key={button.text}
-                          variant={button.variant as "primary" | "outline"} // Cast type for safety
-                          className="font-[900]"
+                      variant={button.variant as "primary" | "outline"}
+                      className='font-[900]'
                     >
                       {button.text}
                     </Button>
